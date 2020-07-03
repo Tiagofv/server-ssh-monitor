@@ -1,0 +1,42 @@
+{
+    "name": "tiagofv/server-ssh-monitor",
+    "description": "A lightweight package to enter your server using SSH and provide metrics.",
+    "keywords": [
+        "tiagofv",
+        "server-ssh-monitor"
+    ],
+    "homepage": "https://github.com/tiagofv/server-ssh-monitor",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Tiago Braga",
+            "email": "tiagofvx@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tiagofv\\ServerSshMonitor\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tiagofv\\ServerSshMonitor\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
